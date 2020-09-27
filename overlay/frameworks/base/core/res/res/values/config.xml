@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2015, The Android Open Source Project
+** Copyright 2020, The LineageOS Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -360,24 +360,6 @@
         <item>ERR_ESTIMATE=0</item>
         <item>INTERMEDIATE_POS=0</item>
         <item>SUPL_ES=0</item>
-    </string-array>
-
-    <!-- Values for USB port setting. in format of bootmode:current function:new function -->
-    <string-array translatable="false" name="config_oemUsbModeOverride">
-        <item>"hw-factory:mtp:manufacture,adb"</item>
-        <item>"hw-factory:mtp,adb:manufacture,adb"</item>
-        <item>"hw-factory:ptp:manufacture,adb"</item>
-        <item>"hw-factory:ptp,adb:manufacture,adb"</item>
-        <item>"hw-factory:rndis:manufacture,adb"</item>
-        <item>"hw-factory:rndis,adb:manufacture,adb"</item>
-        <item>"hw-factory:adb:manufacture,adb"</item>
-        <item>"bp-tools:mtp:diag,serial_smd,rmnet_ipa,adb"</item>
-        <item>"bp-tools:mtp,adb:diag,serial_smd,rmnet_ipa,adb"</item>
-        <item>"bp-tools:ptp:diag,serial_smd,rmnet_ipa,adb"</item>
-        <item>"bp-tools:ptp,adb:diag,serial_smd,rmnet_ipa,adb"</item>
-        <item>"bp-tools:adb:diag,serial_smd,rmnet_ipa,adb"</item>
-        <item>"bp-tools:rndis:rndis,serial,adb"</item>
-        <item>"bp-tools:rndis,adb:rndis,serial,adb"</item>
     </string-array>
 
     <!-- MMS user agent string -->
