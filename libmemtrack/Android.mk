@@ -23,47 +23,19 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-$(call inherit-product, vendor/huawei/hi6250/hi6250-vendor.mk)
+LOCAL_PATH := $(call my-dir)
 
-# Audio
-PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    audio.primary.default \
-    audio.r_submix.default \
-    audio.usb.default \
-    libaudioroute \
-    libaudioutils \
-    libtinyalsa \
-    tinycap \
-    tinymix \
-    tinypcminfo \
-    tinyplay \
+# HAL module implemenation stored in
+# hw/<POWERS_HARDWARE_MODULE_ID>.<ro.hardware>.so
+include $(CLEAR_VARS)
 
-# Memtrack
-PRODUCT_PACKAGES += \
-    memtrack.hi6250 \
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/huawei/hi6250/rootdir/,root/)
-
-# Treble HALs
-$(call inherit-product, device/huawei/hi6250/treble.mk)
-
-# USB
-PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
-
-# Wifi
-PRODUCT_PACKAGES += \
-    hostapd \
-    libwpa_client \
-    wpa_supplicant
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=15
+LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_C_INCLUDES += hardware/libhardware/include
+LOCAL_CFLAGS := -Wconversion -Wall -Werror -Wno-sign-conversion
+LOCAL_CLANG  := true
+LOCAL_SHARED_LIBRARIES := liblog libhardware
+LOCAL_SRC_FILES := memtrack_hi6250.c
+LOCAL_MODULE := memtrack.hi6250
+#LOCAL_MODULE := memtrack.$(TARGET_BOARD_PLATFORM)
+include $(BUILD_SHARED_LIBRARY)
