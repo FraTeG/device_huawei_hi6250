@@ -37,5 +37,6 @@ LOCAL_CLANG  := true
 LOCAL_SHARED_LIBRARIES := liblog libhardware
 LOCAL_SRC_FILES := memtrack_hi6250.c
 LOCAL_MODULE := memtrack.hi6250
+LOCAL_VENDOR_MODULE := true
 #LOCAL_MODULE := memtrack.$(TARGET_BOARD_PLATFORM)
 include $(BUILD_SHARED_LIBRARY)
