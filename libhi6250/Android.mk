@@ -31,5 +31,6 @@ LOCAL_MODULE := libhi6250
 LOCAL_VENDOR_MODULE := true
 LOCAL_SHARED_LIBRARIES := libicuuc
 LOCAL_C_INCLUDES += external/icu/icu4c/source/common
+LOCAL_SRC_FILES := wifi.c
 
 include $(BUILD_SHARED_LIBRARY)

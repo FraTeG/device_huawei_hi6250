@@ -1,6 +1,12 @@
 import /init.connectivity.hisi.rc
 
 on post-fs-data
+    copy /vendor/etc/wifi/hostapd_hisi.conf /data/misc/wifi/hostapd_hisi.conf
+    copy /vendor/etc/wifi/p2p_supplicant_hisi.conf /data/misc/wifi/p2p_supplicant_hisi.conf
+    copy /vendor/etc/wifi/p2p_supplicant_overlay.conf /data/misc/wifi/p2p_supplicant_overlay.conf
+    copy /vendor/etc/wifi/wpa_supplicant.conf /data/misc/wifi/wpa_supplicant.conf
+    copy /vendor/etc/wifi/wpa_supplicant_hisi.conf /data/misc/wifi/wpa_supplicant_hisi.conf
+    copy /vendor/etc/wifi/wpa_supplicant_overlay.conf /data/misc/wifi/wpa_supplicant_overlay.conf
     mkdir /data/misc/wifi 0770 wifi wifi
     chown wifi wifi /data/misc/wifi
     mkdir /data/misc/wifi/hostapd 0770 wifi wifi
