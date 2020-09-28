@@ -271,6 +271,7 @@ on boot
 
 
 on post-fs-data
+    export LD_PRELOAD libhi6250.so
     mkdir /data/nfc
     chown nfc nfc /data/nfc
 

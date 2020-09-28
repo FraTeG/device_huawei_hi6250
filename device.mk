@@ -106,6 +106,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/huawei/hi6250/rootdir/,root/)
 
+# Shims
+PRODUCT_PACKAGES += \
+    libhi6250
+
 # Treble HALs
 $(call inherit-product, device/huawei/hi6250/treble.mk)
 
