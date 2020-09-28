@@ -1,0 +1,5 @@
+# Wizard
+ro.com.google.locationfeatures=1
+ro.config.sync=yes
+ro.setupwizard.enable_bypass=1
+ro.setupwizard.mode=OPTIONAL
