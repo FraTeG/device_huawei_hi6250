@@ -73,10 +73,6 @@ USE_OPENGL_RENDERER := true
 HISI_TARGET_PRODUCT := hi6250
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_hi6250
-TARGET_RECOVERY_DEVICE_MODULES := libinit_hi6250
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00478000
 BOARD_KERNEL_CMDLINE := loglevel=4 coherent_pool=512K page_tracker=on slub_min_objects=12 androidboot.selinux=permissive
