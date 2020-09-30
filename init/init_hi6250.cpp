@@ -23,7 +23,7 @@
 
 constexpr auto CMDLINE_PATH = "/proc/cmdline";
 constexpr auto CMDLINE_PRODUCT_ID = "productid";
-constexpr auto PHONE_PROP_PATH = "/odm/phone.prop";
+constexpr auto PHONE_PROP_PATH = "/vendor/phone.prop";
 
 using android::base::ReadFileToString;
 using android::base::Split;

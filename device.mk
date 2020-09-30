@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
 
+# Properties
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/vendor/phone.prop:$(TARGET_COPY_OUT_VENDOR)/phone.prop
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.audio.low_latency.xml \
