@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gatekeeper.hi6250
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.hi6250
+
 # Memtrack
 PRODUCT_PACKAGES += \
     memtrack.hi6250 \
