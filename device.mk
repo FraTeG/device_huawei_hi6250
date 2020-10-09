@@ -106,6 +106,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     sys.usb.configfs=1 \
     sys.usb.controller=hisi-usb-otg
 
+# Power
+PRODUCT_PACKAGES += \
+    power.hi6250
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/huawei/hi6250/rootdir/,root/)
