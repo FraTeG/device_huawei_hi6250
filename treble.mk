@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0 \
 
-# USB HALsn
+# USB HALs
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
 

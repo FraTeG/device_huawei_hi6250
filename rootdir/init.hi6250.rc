@@ -5,15 +5,15 @@ import /init.charger.rc
 import /init.connectivity.rc
 import /init.device.rc
 import /init.extmodem.rc
+import /init.hi6250.power.rc
 import /init.hi6250.usb.configfs.rc
 import /init.hi6250.usb.rc
+import /init.hisi.usb.rc
 import /init.hisi.rc
 import /init.manufacture.rc
 import /init.performance.rc
 import /init.platform.rc
 import /init.protocol.rc
-import /init.hi6250.power.rc
-import /init.hisi.usb.rc
 import /init.post-fs-data.rc
 import /init.tee.rc
 
