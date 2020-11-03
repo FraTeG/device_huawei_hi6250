@@ -18,8 +18,7 @@ ifeq ($(I_AM_METICULUS), true)
 # Use my custom build ninja that prints to screen sequentially
 # so you can see whats going on.
 # Resolve depenancy issue: sudo apt-get install libc++-dev
-$(shell echo "Using Meticulus's Ninja" >&2)
-$(shell cp -f $(LOCAL_PATH)/prebuilt/ninja prebuilts/ninja/linux-x86/ninja)
+$(shell echo "Using HI6250's Stuff" >&2)
 
 # Meticulus recovery init rc
 PRODUCT_COPY_FILES += \
@@ -39,6 +38,4 @@ PRODUCT_PACKAGES += \
 
 # Meticulus Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/hi6250
-else
-$(shell cd prebuilts/build-tools && git checkout linux-x86/bin/ninja)
 endif
