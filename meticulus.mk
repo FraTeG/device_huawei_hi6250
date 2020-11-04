@@ -29,16 +29,11 @@ ifeq ($(I_AM_METICULUS), true)
 # Resolve depenancy issue: sudo apt-get install libc++-dev
 $(shell echo "Using HI6250's Stuff" >&2)
 
-# Meticulus recovery init rc
+# Meticulus Recovery
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/recovery/init.recovery.meticulus.rc:root/init.recovery.meticulus.rc
-
-# Meticulus recovery checks
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/recovery/stock-check.sh:install/bin/stock-check.sh \
-	$(LOCAL_PATH)/recovery/finalize.sh:install/bin/finalize.sh \
-	$(LOCAL_PATH)/recovery/data-formatter.sh:install/bin/data-formatter.sh
-
+    $(LOCAL_PATH)/recovery/stock-check.sh:install/bin/stock-check.sh \
+    $(LOCAL_PATH)/recovery/finalize.sh:install/bin/finalize.sh \
+    $(LOCAL_PATH)/recovery/data-formatter.sh:install/bin/data-formatter.sh
 
 # Meticulus Settings Integration
 PRODUCT_PACKAGES += \
