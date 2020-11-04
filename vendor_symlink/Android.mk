@@ -25,7 +25,6 @@
 
 toplinks := \
     bin \
-    app \
     build.prop \
     firmware \
     framework \
