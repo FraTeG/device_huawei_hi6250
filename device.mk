@@ -33,7 +33,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/apns-conf.xml:system/etc/apns-conf.xml \
 
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -140,8 +139,76 @@ PRODUCT_PACKAGES += \
     power.hi6250 \
 
 # Ramdisk
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/huawei/hi6250/rootdir/,root/)
+PRODUCT_PACKAGES += \
+    27c11b57-14ff-48bf-abbe-92e345092278.sec \
+    cota \
+    cust_init \
+    hdbd \
+    hw_ueventd \
+    ntfs-3gd \
+    oeminfo_nvm_server \
+    secure_storage_s \
+    teecd \
+    volisnotd
+
+PRODUCT_PACKAGES += \
+    bfgx_and_wifi_cfg \
+    bfgx_cfg \
+    CPU_RAM_SCHED.bin \
+    CPU_RAM_WBS.bin \
+    cr4_asic.bin \
+    cr4_regmem.bin \
+    cr4_regmem_u1.bin \
+    fstab.hi6250 \
+    fstab.zram512m \
+    fstab.zram1024m \
+    fstab.zram1280m \
+    fstab.zram1536m \
+    init.3584.rc \
+    init.4541.rc \
+    init.4753.rc \
+    init.4873.rc \
+    init.6198.rc \
+    init.51316.rc \
+    init.61202.rc \
+    init.61285.rc \
+    init.61457.rc \
+    init.audio.rc \
+    init.balong_modem.rc \
+    init.charger.rc \
+    init.chip.charger.rc \
+    init.chip.usb.rc \
+    init.connectivity.bcm43xx.rc \
+    init.connectivity.bcm43455.rc \
+    init.connectivity.gps.rc \
+    init.connectivity.hisi.rc \
+    init.connectivity.rc \
+    init.device.rc \
+    init.extmodem.rc \
+    init.hi6250.rc \
+    init.hi6250.usb.rc \
+    init.hisi.rc \
+    init.hisi.usb.rc \
+    init.manufacture.rc \
+    init.meticulus.rc \
+    init.performance.rc \
+    init.platform.rc \
+    init.post-fs-data.rc \
+    init.protocol.rc \
+    init.recovery.balong_modem.rc \
+    init.recovery.hisi.rc \
+    init.recovery.huawei.rc \
+    init.tee.rc \
+    ueventd.3584.rc \
+    ueventd.4541.rc \
+    ueventd.4873.rc \
+    ueventd.6198.rc \
+    ueventd.51316.rc \
+    ueventd.61202.rc \
+    ueventd.61285.rc \
+    ueventd.61457.rc \
+    ueventd.hi6250.rc \
+    wifi_cfg \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
