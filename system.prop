@@ -64,6 +64,9 @@ persist.sys.google_avc_enc=0
 # Power
 persist.sys.stock_power_HAL=false
 
+# RIL 
+ro.huaweiril=true
+
 # Sdcards
 persist.fw.force_adoptable=true
 persist.sys.strictmode.disable=true
