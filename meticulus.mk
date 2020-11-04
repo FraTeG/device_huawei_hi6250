@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
 
 # Meticulus Settings Integration
 PRODUCT_PACKAGES += \
-    CodinalteParts \
     volumeinput
 
 # Meticulus Releasetools
