@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-$(call inherit-product, vendor/huawei/hi6250/vendor.mk)
+$(call inherit-product, vendor/huawei/hi6250/hi6250-vendor.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal xxhdpi
