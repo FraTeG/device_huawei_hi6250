@@ -1,0 +1,32 @@
+# Audio
+vendor/lib/libxml2.so
+vendor/lib64/libxml2.so
+
+# Camera
+vendor/lib/libperfhub_client.so
+vendor/lib64/libperfhub_client.so
+
+# Codecs
+vendor/lib/lib_k3_ffmpeg.so
+vendor/lib64/lib_k3_ffmpeg.so
+
+# Fonts
+fonts/DroidSansFallback.ttf
+
+# Graphics
+vendor/lib/egl/libGLES_mali.so
+vendor/lib64/egl/libGLES_mali.so
+
+# NFC
+etc/libnfc-brcm.conf
+etc/libnfc-nxp.conf
+etc/native_packages.bin
+vendor/lib64/hw/nfc_nci.pn54x.default.so
+
+# Power
+vendor/lib/libpowergenie_native3.so
+vendor/lib64/libpowergenie_native3.so
+
+# Shims
+vendor/lib/libshim_libui.so
+vendor/lib64/libshim_libui.so
