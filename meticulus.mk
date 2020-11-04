@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 Jonathan Jason Dennis (theonejohnnyd@gmail.com)
+# Copyright 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,6 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# This contains the module build definitions for the hardware-specific
+# components for this device.
+#
+# As much as possible, those components should be built unconditionally,
+# with device-specific names to avoid collisions, to avoid device-specific
+# bitrot and build breakages. Building a component unconditionally does
+# *not* include it on all devices, so it is safe even with hardware-specific
+# components.
 
 ifeq ($(I_AM_METICULUS), true)
 # Use my custom build ninja that prints to screen sequentially

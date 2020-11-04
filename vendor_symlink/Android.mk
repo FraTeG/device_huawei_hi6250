@@ -1,6 +1,5 @@
-
-# Copyright (C) 2008 The Android Open Source Project
-# Copyright (C) 2017 Jonathan Dennis [Meticulus]
+#
+# Copyright 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,7 +12,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
+# This contains the module build definitions for the hardware-specific
+# components for this device.
+#
+# As much as possible, those components should be built unconditionally,
+# with device-specific names to avoid collisions, to avoid device-specific
+# bitrot and build breakages. Building a component unconditionally does
+# *not* include it on all devices, so it is safe even with hardware-specific
+# components.
 
 toplinks := \
     bin \
@@ -741,11 +749,8 @@ symlinks := \
     $(shell ln -s /hwvendor/bin/fingerprintd $(PRODUCT_OUT)/system/bin/fingerprintd 2> /dev/null) \
     $(shell ln -s /system/etc/native_packages.bin $(PRODUCT_OUT)/system/etc/native_packages.xml 2> /dev/null)
 
-
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := emui5_vendor_symlinks
 LOCAL_MODULE_TAGS := optional
 LOCAL_REQUIRED_MODULES := $(symlinks)
 include $(BUILD_PHONY_PACKAGE)
-
