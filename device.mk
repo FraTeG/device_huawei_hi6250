@@ -237,3 +237,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.sync=yes \
     ro.setupwizard.enable_bypass=1 \
     ro.setupwizard.mode=OPTIONAL \
+
+# Device specific preferences
+PRODUCT_PACKAGES += \
+    Extras
